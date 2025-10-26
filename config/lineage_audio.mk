@@ -6,6 +6,9 @@ ALARM_PATH := vendor/lineage/prebuilt/common/media/audio/alarms
 NOTIFICATION_PATH := vendor/lineage/prebuilt/common/media/audio/notifications
 RINGTONE_PATH := vendor/lineage/prebuilt/common/media/audio/ringtones
 
+CLASSIC_DUMBDROID_SRC := $(RINGTONE_PATH)/Classic_Dumbdroid.wav
+CLASSIC_DUMBDROID_DEST := $(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Classic_Dumbdroid.wav
+
 # Alarms
 PRODUCT_COPY_FILES += \
     $(ALARM_PATH)/CyanAlarm.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/CyanAlarm.ogg \
@@ -30,4 +33,5 @@ PRODUCT_COPY_FILES += \
     $(RINGTONE_PATH)/Lyon.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Lyon.ogg \
     $(RINGTONE_PATH)/Rockin.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Rockin.ogg \
     $(RINGTONE_PATH)/Sheep.mp3:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Sheep.mp3 \
-    $(RINGTONE_PATH)/Yukaay.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Yukaay.ogg
+    $(RINGTONE_PATH)/Yukaay.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Yukaay.ogg \
+    $(CLASSIC_DUMBDROID_SRC):$(CLASSIC_DUMBDROID_DEST)
