@@ -1,2 +1,4 @@
-480 640 2
-c 0 0 part0 #000000
+480 640 25
+c 1 0 intro
+c 0 0 loop
+c 1 0 outro
